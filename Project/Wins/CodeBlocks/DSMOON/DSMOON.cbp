@@ -31,7 +31,13 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="C:/Users/bryan/Documents/GitHub/DarkSide/include" />
 		</Compiler>
+		<Linker>
+			<Add library="SDL2" />
+			<Add library="SDL2main" />
+			<Add directory="C:/Users/bryan/Documents/GitHub/DarkSide/lib/Win/win32" />
+		</Linker>
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
