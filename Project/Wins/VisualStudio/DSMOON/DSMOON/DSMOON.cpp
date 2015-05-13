@@ -1,17 +1,16 @@
 // DSMOON.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include <stdio.h>
+#include <SDL2\SDL.h>
+#undef main
 //#include
-
-int main(int argc, _TCHAR* argv[])
+SDL_Window * mWindow;
+SDL_Renderer * mRender;
+int main()
 {
-	char c;
-	printf("hello world");
-
-	c = _fgetchar();
-	getchar();
+	SDL_Init(SDL_INIT_VIDEO);
+	mWindow =SDL_CreateWindow(
+	
 
 	return 0;
 }
